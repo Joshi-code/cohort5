@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <img class="logo" src="./img/book.jpg" alt="books">
+            <div class="student-form">
+                <h1>Student Registration Form</h1>
+                <p>Fill out the form to apply for the training courses. You can consider your application accepted after you receive a confirmation email
+                </p>
+            </div>
+        </header>
+        <!--form-->
+        <form action="#">
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Student Information</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <input type="text" name="" id="firstname" placeholder="First Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="" id="middlename" placeholder="Middle Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="" id="lastname" placeholder="Last Name" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="dob" placeholder="Date of Birth" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="studentid" placeholder="Student ID" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ADDRESS-->
+            <div class="form second">
+                <div class="details">
+                    <span class="title">Address</span>
+                    <div class="fields">
+                        <div class="input-field2">
+                            <input type="text" name="" id="address" placeholder="Street Address" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="city" placeholder="City" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="state" placeholder="State / Province" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="country" placeholder="Country" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="text" name="" id="zipcode" placeholder="ZIP Code" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CONTACT INFORMATION-->
+            <div class="form third">
+                <div class="details">
+                    <span class="title">Contact Information</span>
+                    <div class="fields">
+                        <div class="input-field1">
+                            <input type="email" name="" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-field1">
+                            <input type="email" name="" id="email" placeholder="Confirm Email" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--COURSES-->
+            <div class="form fourth">
+                <div class="details">
+                    <span class="title">Courses<span class="sign">*</span></span>
+                    <div class="field">
+                        <div class="input-field3">
+                            <button disabled="disabled">+ Add new record</button>
+                        </div>
+                        <div class="choice">
+                            <div class="courses">
+                                <select id="courses" name="Courses">
+                                <option value="">Courses</option>
+                                <option value="FED 101">Frontend Development</option>
+                                <option value="BED 101">Backend Development</option>
+                                <option value="GRD 101">Graphic Designer</option>  
+                            </select>
+                            </div>
+                            <div class="level">
+                                <select id="level" name="Level">
+                                <option value="">Level</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option> 
+                                <option value="400">400</option>   
+                                <option value="500">500</option>   
+                            </select>
+                            </div>
+                            <div class="language">
+                                <select id="language" name="Language">
+                                <option value="">Language</option>
+                                <option value="english">English</option>
+                                <option value="french">French</option>
+                            </select>
+                            </div>
+                            <div class="StartDate">
+                                <select id="startdate" name="Start Date">
+                                <option value="">Start Date</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option> 
+                                <option value="2022">2022</option>   
+                                <option value="2023">2023</option>   
+                            </select>
+                            </div>
+                            <input type="text" name="" id="empty">
+                        </div>
+                        <!--COOMENT-->
+                        <div class="form second">
+                            <div class="details">
+                                <div class="fields">
+                                    <div class="input-field2">
+                                        <textarea name="" id="talk" cols="30" rows="10" placeholder="Comments"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="submitbtn" type="submit" class="clickme">SEND REQUEST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <!--PREVIEW PAGE-->
+    <section class="popup">
+        <div class="popup-pg-bg">
+            <h2>STUDENT INFORMATION</h2>
+            <P>First Name: <span id="dfirstname"></span></P>
+            <P>Middle Name: <span id="dmiddlename"></span></P>
+            <P>Last Name: <span id="dlastname"></span></P>
+            <P>Date of birth: <span id="ddob"></span></P>
+            <P>Student ID: <span id="dstudentid"></span></P>
+            <P>Street Address: <span id="dstreetname"></span></P>
+            <P>City: <span id="dcity"></span></P>
+            <P>State/Province: <span id="dstate"></span></P>
+            <P>Country: <span id="dcountry"></span></P>
+            <P>Zip Code: <span id="dzipcode"></span></P>
+            <P>Email: <span id="demail"></span></P>
+            <P>Course: <span id="dcourse"></span></P>
+            <P>Level: <span id="dlevel"></span></P>
+            <P>Language: <span id="dlanguage"></span></P>
+            <P>Start Date: <span id="dstartdate"></span></P>
+            <button id="confirm">Confirm</button>
+         </div>
+
+    </section>
+    <script defer src="/JS/form.js"></script>
+</body>
+
+</html>

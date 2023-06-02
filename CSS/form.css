@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: 5px solid yellowgreen;
+}
+
+
+/*CONTAINER*/
+
+.container {
+    position: relative;
+    max-width: 990px;
+    height: 1000px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 0 15px;
+    margin: 10px 0;
+}
+
+
+/*HEADER*/
+
+.container header {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    gap: 50px;
+}
+
+
+/*HEADER PARAGRAPH*/
+
+.container header p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/*FORM*/
+
+.container form {
+    position: relative;
+    min-height: 823px;
+    margin-top: 16px;
+    background-color: whitesmoke;
+}
+
+.container form .details {
+    margin-top: 40px;
+}
+
+.container form .title {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: black;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields input {
+    display: flex;
+    padding: 0 15px;
+    outline: none;
+    width: 302px;
+    height: 35px;
+    flex-direction: column;
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    border: 1px solid #aaa;
+}
+
+form .fields input:focus {
+    border: 1px solid teal;
+}
+
+form .fields .input-field1 input {
+    width: 460px;
+}
+
+
+/*ADDRESS*/
+
+form .fields .input-field2 input {
+    width: 930px;
+}
+
+.choice {
+    display: flex;
+    border-top: 1px solid gray;
+}
+
+
+/*COURSES*/
+
+span .sign {
+    color: red;
+    margin-left: 5px;
+}
+
+.field {
+    margin-top: 8px;
+    border: 1px solid gray;
+    height: 92px;
+}
+
+button {
+    padding: 8px 20px;
+    margin: 10px;
+}
+
+.choice select {
+    width: 150px;
+    height: 35px;
+    outline: none;
+}
+
+#empty {
+    width: 300px;
+    outline: none;
+}
+
+
+/*TEXTAREA*/
+
+textarea {
+    width: 930px;
+    padding: 10px 0 0 10px;
+    margin-top: -18px;
+    height: 140px;
+    font-size: 16px;
+}
+
+
+/*SUBMIT*/
+
+.clickme {
+    background-color: rgb(32, 147, 235);
+    margin-left: 3px;
+    width: 930px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    height: 30px;
+    outline: none;
+    border: 1px none rgb(32, 147, 235);
+}
+
+.popup {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    display: none;
+    place-content: center;
+}
+
+.popup-pg-bg {
+    display: grid;
+    align-items: center;
+    background-color: rgb(238, 231, 231);
+    height: 50rem;
+    width: 40rem;
+    border-radius: 20px;
+    padding: 3rem 5rem;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.popup-pg-bg h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.popup-pg-bg p {
+    color: #444;
+}
+
+.popup-pg-bg p span {
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: rgb(0, 0, 14);
+}
+
+#confirm {
+    background-color: rgb(32, 147, 235);
+    padding: 0.7rem;
+    border: none;
+    color: #fff;
+    margin-right:150px;
+    font-size: 14px;
+    width: 10rem;
+    justify-self: end;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#confirm:hover {
+    opacity: 0.8;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: grid;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width:760px){
+    .container{
+        width:70%;
+        margin:auto;
+    }
+
+    body{
+        background-color: whitesmoke;
+    }
+
+form{
+    flex-direction: column;
+}
+
+
+form .fields input {
+    flex-direction: column;
+    width:160px;
+}
+
+#address{
+    width:160px;
+}
+
+.field{
+    border:none;
+}
+
+.choice{
+    flex-direction: column;
+    border-top: none;
+}
+
+#empty{
+    display: none;
+}
+
+textarea{
+    width:160px;
+    height:50px;
+    font-size: 14px;
+}
+
+.clickme{
+    width:160px;
+    margin-left: 4px;
+    font-size: 11px;
+}
+
+.container header {
+    font-size: 7px;
+    font-weight: 600;
+    color: black;
+    display: block;
+    gap: 50px;
+}
+
+#dob, #studentid, #city, #state, #country, #zipcode, #email{
+       width:160px;
+    }
+}
+
