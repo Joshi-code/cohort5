@@ -60,6 +60,7 @@ submitBtn.addEventListener('click', (e) => {
 
 
     popupMenu.classList.add('show')
+    
 })
 
 
@@ -69,5 +70,6 @@ confirmbtn.addEventListener('click', () => {
     alert('Request Sent successfully')
     popupMenu.classList.remove('show')
     document.querySelector('form').reset()
+
 
 })

@@ -275,13 +275,13 @@ form .fields input {
 }
 
 textarea{
-    width:160px;
+    width:150px;
     height:50px;
     font-size: 14px;
 }
 
 .clickme{
-    width:160px;
+    width:150px;
     margin-left: 4px;
     font-size: 11px;
 }
